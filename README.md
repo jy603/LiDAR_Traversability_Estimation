@@ -19,6 +19,21 @@ This repository is the official implementation of "LiDAR-based Traversability Es
 # Abstract 
 Navigating autonomous robots through the intricate landscapes of construction sites necessitates an accurate evaluation of traversability, a challenge that our research addresses with a self-supervised learning strategy utilizing 3D LiDAR point cloud data. This approach enables ground robots to autonomously identify traversable areas based on the spatial relationships between their trajectories and the surrounding environmental features. By employing self-supervised trajectory area labeling and Positive-Unlabeled (PU) learning, our method classifies points as traversable or non-traversable without labor-intensive manual annotations. Utilizing the RELLIS-3D and Hilti datasets, coupled with Simultaneous Localization and Mapping (SLAM) for trajectory mapping, we conducted qualitative and quantitative assessments with vehicle/robot-mounted LiDAR systems. Results show that the proposed method can reasonably identify traversable areas from LiDAR data for robots in off-road environments as well as robots on construction sites.
 
+---
+## Environment Setup
+
+We recommend creating a new virtual environment for running the code using either Anaconda or Mamba.
+
+- **Anaconda**
+```setup
+conda env create -f SemanticTraverse.yml
+``` 
+- **Mamba**
+```setup
+mamba env create --file SemanticTraverse.yml
+```
+---
+
 # Dataset Preparation
 ## Datasets
 Both datasets should be prepared in Kitti format
@@ -31,8 +46,14 @@ Both datasets should be prepared in Kitti format
 If your data does not have pose information, you can use Simultaneous Localization and Mapping (SLAM) to estimate it. SLAM is the process of simultaneously building a map and localizing the robot's position in it. Here, we use [HDL Graph SLAM](https://github.com/koide3/hdl_graph_slam), which is a popular open-source ROS package for real-time 6DOF SLAM poses using 3D LiDAR sensor data for the Hilti dataset.
 
 # Training
+```bash
+python train_pu.py --config {YOUR_CONFIG_FILE_PATH}
+```
 
 # Testing
+```bash
+python test_pu.py --config {YOUR_CONFIG_FILE_PATH}
+```
 
 # Acknowledgment
 Our code is based on the following repositories:
