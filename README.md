@@ -16,6 +16,8 @@ This repository is the official implementation of "LiDAR-based Traversability Es
     <em>This figure illustrates some of the results of our traversability estimation method on the RELLIS-3D LiDAR dataset (Velodyne Ultra Puck). On the top row is the RGB camera image, the middle row shows the corresponding model outputs, and the bottom row shows ground truth for comparison. (Red dots represent traversable points, while blue dots represent non-traversable points)</em>
 </p>
 
+[![YouTube](http://i.ytimg.com/vi/i-hFQQ0ddyc/hqdefault.jpg)](https://www.youtube.com/watch?v=i-hFQQ0ddyc)
+
 # Abstract 
 Navigating autonomous robots through the intricate landscapes of construction sites necessitates an accurate evaluation of traversability, a challenge that our research addresses with a self-supervised learning strategy utilizing 3D LiDAR point cloud data. This approach enables ground robots to autonomously identify traversable areas based on the spatial relationships between their trajectories and the surrounding environmental features. By employing self-supervised trajectory area labeling and Positive-Unlabeled (PU) learning, our method classifies points as traversable or non-traversable without labor-intensive manual annotations. Utilizing the RELLIS-3D and Hilti datasets, coupled with Simultaneous Localization and Mapping (SLAM) for trajectory mapping, we conducted qualitative and quantitative assessments with vehicle/robot-mounted LiDAR systems. Results show that the proposed method can reasonably identify traversable areas from LiDAR data for robots in off-road environments as well as robots on construction sites.
 
