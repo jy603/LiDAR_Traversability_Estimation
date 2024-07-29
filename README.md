@@ -45,12 +45,12 @@ Both datasets should be prepared in Kitti format
 # Pose Estimation
 If your data does not have pose information, you can use Simultaneous Localization and Mapping (SLAM) to estimate it. SLAM is the process of simultaneously building a map and localizing the robot's position in it. Here, we use [HDL Graph SLAM](https://github.com/koide3/hdl_graph_slam), which is a popular open-source ROS package for real-time 6DOF SLAM poses using 3D LiDAR sensor data for the Hilti dataset.
 
-# Training
+# Train
 ```bash
 python train_pu.py --config {YOUR_CONFIG_FILE_PATH}
 ```
 
-# Testing
+# Test
 ```bash
 python test_pu.py --config {YOUR_CONFIG_FILE_PATH}
 ```
