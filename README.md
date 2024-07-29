@@ -16,7 +16,7 @@ Both dataset should be prepared in Kitti format
 3. [Hilti](https://hilti-challenge.com/dataset-2022.html)
     - Provided pose files format: [timestamp, Tx, Ty, Tz, QW, QX, QY, QZ]
 
-## Semantic Segmentation Models
+## Segmentation Model
 - [SphereFormer](https://github.com/dvlab-research/SphereFormer)
 
 
