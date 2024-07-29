@@ -13,7 +13,7 @@ This repository is the official implementation of "LiDAR-based Traversability Es
 
 <p align="center">
 <img src=/visualizations/rellis_results.png/>
-    <em>This figure illustrates some of the results of our traversability estimation method on the RELLIS-3D dataset (Velodyne Ultra Puck). On the top row is the RGB camera image, the middle row shows the corresponding model outputs, and the bottom row shows ground truth for comparison. (Red dots represent traversable points, while blue dots represent non-traversable points)</em>
+    <em>This figure illustrates some of the results of our traversability estimation method on the RELLIS-3D LiDAR dataset (Velodyne Ultra Puck). On the top row is the RGB camera image, the middle row shows the corresponding model outputs, and the bottom row shows ground truth for comparison. (Red dots represent traversable points, while blue dots represent non-traversable points)</em>
 </p>
 
 # Abstract 
